@@ -76,7 +76,7 @@ public class SoftKeyboard extends InputMethodService
     private String mWordSeparators;
     
     private Typeface mTypeface;
-
+    private String mTypefaceName = "monlambodyig.ttf";//Jomolhari-alpha3c-0605331.ttf";//"DDC_Uchen.ttf"
     /**
      * Main initialization of the input method component.  Be sure to call
      * to super class.
@@ -85,7 +85,7 @@ public class SoftKeyboard extends InputMethodService
         super.onCreate();
         mWordSeparators = getResources().getString(R.string.word_separators);
         
-        mTypeface = Typeface.createFromAsset(getAssets(), "DDC_Uchen.ttf");
+        mTypeface = Typeface.createFromAsset(getAssets(), mTypefaceName);
         
     }
     
@@ -129,7 +129,7 @@ public class SoftKeyboard extends InputMethodService
      * be generated, like {@link #onCreateInputView}.
      */
     @Override public View onCreateCandidatesView() {
-        mCandidateView = new CandidateView(this);
+        mCandidateView = new CandidateView(this, mTypeface);
         mCandidateView.setService(this);
         return mCandidateView;
     }

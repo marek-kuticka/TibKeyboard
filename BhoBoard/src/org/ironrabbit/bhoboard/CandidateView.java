@@ -66,13 +66,18 @@ public class CandidateView extends View {
     
     private GestureDetector mGestureDetector;
 
+    private Typeface mTypeface;
+    
     /**
      * Construct a CandidateView for showing suggested words for completion.
      * @param context
      * @param attrs
      */
-    public CandidateView(Context context) {
+    public CandidateView(Context context, Typeface typeface) {
         super(context);
+        
+        mTypeface = typeface;
+        
         mSelectionHighlight = context.getResources().getDrawable(
                 android.R.drawable.list_selector_background);
         mSelectionHighlight.setState(new int[] {
@@ -96,7 +101,7 @@ public class CandidateView extends View {
         mPaint.setAntiAlias(true);
         mPaint.setTextSize(r.getDimensionPixelSize(R.dimen.candidate_font_height));
         mPaint.setStrokeWidth(0);
-        mPaint.setTypeface(Typeface.createFromAsset(getContext().getAssets(), "DDC_Uchen.ttf"));
+        mPaint.setTypeface(mTypeface);
         
         mGestureDetector = new GestureDetector(new GestureDetector.SimpleOnGestureListener() {
             @Override
