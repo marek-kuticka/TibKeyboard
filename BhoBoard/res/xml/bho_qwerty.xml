@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="8.333325%p" 
+android:keyHeight="@dimen/key_height" android:horizontalGap="0.0px" android:verticalGap="0.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Row>
+        <Key android:codes="3904" android:popupCharacters="ྐ" android:keyEdgeFlags="left" />
+        <Key android:codes="3905" android:popupCharacters="ྑ" />
+        <Key android:codes="3906" android:popupCharacters="ྒ" />
+        <Key android:codes="3908" android:popupCharacters="ྔ" />
+        <Key android:codes="3954" android:popupCharacters="ྀ" />
+        <Key android:codes="3956" />
+        <Key android:codes="3962" android:popupCharacters="ཻ" />
+        <Key android:codes="3964" android:popupCharacters="ཽ" />
+        <Key android:codes="3909" android:popupCharacters="ྕ" />
+        <Key android:codes="3910" android:popupCharacters="ྖ" />
+        <Key android:codes="3911" android:popupCharacters="ྗ" />
+        <Key android:codes="3913" android:popupCharacters="ྙ" android:keyEdgeFlags="right" />
+    </Row>
+    <Row>
+        <Key android:codes="3919" android:popupCharacters="ྟྚཊ" android:keyEdgeFlags="left" />
+        <Key android:codes="3920" android:popupCharacters="ྠྛཋ" />
+        <Key android:codes="3921" android:popupCharacters="ྡྜཌདྷ" />
+        <Key android:codes="3923" android:popupCharacters="ྣྞཎ" />
+        <Key android:codes="3924" android:popupCharacters="ྤ" />
+        <Key android:codes="3925" android:popupCharacters="ྥ" />
+        <Key android:codes="3926" android:popupCharacters="ྦབྷ" />
+        <Key android:codes="3928" android:popupCharacters="ྨ" />
+        <Key android:codes="3929" android:popupCharacters="ྩ" />
+        <Key android:codes="3930" android:popupCharacters="ྪ" />
+        <Key android:codes="3931" android:popupCharacters="ྫཛྷ" />
+        <Key android:codes="3933" android:popupCharacters="ྭྺ" android:keyEdgeFlags="right" />
+    </Row>
+    <Row>
+        <Key android:codes="3934" android:popupCharacters="ྮ" />
+        <Key android:codes="3935" android:popupCharacters="ྯ" />
+        <Key android:codes="3936" android:popupCharacters="ཱྰ" />
+        <Key android:codes="3937" android:popupCharacters="ྱྻ" />
+        <Key android:codes="3938" android:popupCharacters="ྲྼཪ" />
+        <Key android:codes="3939" android:popupCharacters="ླ" />
+        <Key android:codes="3940" android:popupCharacters="ྴྵཥཀྵ" />
+        <Key android:codes="3942" android:popupCharacters="ྶ" />
+        <Key android:codes="3943" android:popupCharacters="ྷ" />
+        <Key android:codes="3944" android:popupCharacters="ྸ༁ༀ" />
+        <Key android:codes="3851" android:popupCharacters="" />
+        <Key android:codes="3853" android:popupCharacters="༏༐༑༙༈༎༒" />
+    </Row>
+    <Row>
+        <Key android:horizontalGap="8.000004%p" android:codes="3873" android:popupCharacters="༡༢༣༤༥" android:keyEdgeFlags="left" />
+        <Key android:codes="3878" android:popupCharacters="༦༧༨༩༠" />
+        <Key android:codes="3844" android:popupCharacters="༄༅༆༇༺༻༟" />
+        <Key android:codes="3900" android:popupCharacters="༼༽༿༾ྋ༸༊༉" />
+        <Key android:codes="3863" android:popupCharacters="༗༘༚༛༜༝༞࿏" />
+        <Key android:codes="3966" android:popupCharacters="ཾ༹༷༵ྃྂ྇྆" />
+        <Key android:codes="3977" android:popupCharacters="ྉྊྈ྿༓࿁࿀࿂" />
+        <Key android:codes="4036" android:popupCharacters="࿄࿅࿇࿈࿉࿊࿋࿌" />
+        <Key android:codes="3967" android:popupCharacters="ཿ༔༂༃༕༖࿃༶" />
+        <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" />
+    </Row>
+</Keyboard>
