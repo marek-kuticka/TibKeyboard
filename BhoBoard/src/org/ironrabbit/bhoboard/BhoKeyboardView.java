@@ -54,12 +54,13 @@ public class BhoKeyboardView extends KeyboardView {
     	{
     		key = itKeys.next();
     	
-    		String keyCode = ((char)key.codes[0])+"";
-    		
-    		Log.i("bho","setting up key: " + keyCode);
-    		
-    		key.icon = new DynaDrawable (getContext(), key, typeface, keyCode, Color.WHITE);
-            key.iconPreview = new DynaDrawable (getContext(), key, typeface,  keyCode, Color.BLACK);
+    		if (key.codes[0] > 0)
+    		{
+	    		String keyCode = ((char)key.codes[0])+"";
+	    		
+	    		key.icon = new DynaDrawable (getContext(), key, typeface, keyCode, Color.WHITE);
+	            key.iconPreview = new DynaDrawable (getContext(), key, typeface,  keyCode, Color.BLACK);
+    		}
     	}
     	
     }
