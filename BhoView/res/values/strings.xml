@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BhoView</string>
+    <string name="app_name_browse">BhoWeb</string>
+    
+	<string name="str_about_message">BhoText Tibetan Reader</string>
+	 
+	 <string name="welcome">
+	 You can paste text here to display it in Tibetan. You can also "Share" text directly from any other app that supports it, like the Browser or Email apps.
+	 </string>
+	 <string name="str_quit_message">Quit?</string>
+	 <string name="str_ok">OK</string>
+	 <string name="str_no">No</string>
+	 
+	 <string name="str_About">About</string>
+	 <string name="str_Back">Back</string>
+	 <string name="str_Refresh">Refresh</string>
+	 <string name="str_Forward">Forward</string>
+</resources>

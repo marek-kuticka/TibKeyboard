@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+<ScrollView android:id="@+id/output_scroll"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/bhobookbg"
+     >
+<TextView  
+	android:id="@+id/output"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:editable="true"
+     android:gravity="top" 
+     android:textSize="10pt"
+    />
+    </ScrollView>
+    
+</LinearLayout>
