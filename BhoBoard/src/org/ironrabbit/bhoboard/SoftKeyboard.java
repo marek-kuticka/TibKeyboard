@@ -103,7 +103,7 @@ public class SoftKeyboard extends InputMethodService
             mLastDisplayWidth = displayWidth;
         }
         mQwertyKeyboard = new BhoKeyboard(this, R.xml.bho_qwerty);
-        mSymbolsKeyboard = new BhoKeyboard(this, R.xml.symbols);
+        mSymbolsKeyboard = new BhoKeyboard(this, R.xml.bho_sub);
         mSymbolsShiftedKeyboard = new BhoKeyboard(this, R.xml.symbols_shift);
     }
     
@@ -626,7 +626,7 @@ public class SoftKeyboard extends InputMethodService
             updateShiftKeyState(getCurrentInputEditorInfo());
             updateCandidates();
         } else {
-        	Log.v("TibSoftKeyboard", "Handle Character: is Alphabet ");
+        	Log.v("TibSoftKeyboard", "Handle Character: kein Alphabet. commitText");
         	
         	if (primaryCode == 3851) {
         		String precomposed = "";
@@ -645,7 +645,7 @@ public class SoftKeyboard extends InputMethodService
         		Log.v("TibSoftKeyboard", "Precomposed: " + strPre);
         		
         		getCurrentInputConnection().commitText(
-                    precomposed, 1);
+                    precomposed.substring(0, precomposed.length() - 1) + (char)3851, 1);
         	}
         	
         	
