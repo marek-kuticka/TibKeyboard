@@ -28,6 +28,8 @@ import android.util.Log;
 import android.view.inputmethod.EditorInfo;
 
 public class BhoKeyboard extends Keyboard {
+	
+	//test
 
     private Key mEnterKey;
     public BhoKeyboard(Context context, int xmlLayoutResId) {
