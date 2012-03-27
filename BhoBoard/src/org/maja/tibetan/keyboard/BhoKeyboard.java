@@ -14,7 +14,9 @@
  * the License.
  */
 
-package org.ironrabbit.bhoboard;
+package org.maja.tibetan.keyboard;
+
+import org.maja.tibetan.keyboard.R;
 
 import android.content.Context;
 import android.content.res.Resources;

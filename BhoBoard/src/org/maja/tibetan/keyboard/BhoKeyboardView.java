@@ -14,7 +14,7 @@
  * the License.
  */
 
-package org.ironrabbit.bhoboard;
+package org.maja.tibetan.keyboard;
 
 import java.util.Iterator;
 

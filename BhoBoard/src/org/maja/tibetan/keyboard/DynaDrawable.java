@@ -1,4 +1,4 @@
-package org.ironrabbit.bhoboard;
+package org.maja.tibetan.keyboard;
 
 import android.R.color;
 import android.content.Context;

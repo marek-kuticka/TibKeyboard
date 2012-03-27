@@ -14,7 +14,7 @@
  * the License.
  */
 
-package org.ironrabbit.bhoboard;
+package org.maja.tibetan.keyboard;
 
 import android.graphics.Typeface;
 import android.inputmethodservice.InputMethodService;
@@ -32,6 +32,8 @@ import android.view.inputmethod.InputMethodManager;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.maja.tibetan.keyboard.R;
 
 
 /**

@@ -14,7 +14,7 @@
  * the License.
  */
 
-package org.ironrabbit.bhoboard;
+package org.maja.tibetan.keyboard;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -29,6 +29,8 @@ import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.maja.tibetan.keyboard.R;
 
 
 public class CandidateView extends View {
