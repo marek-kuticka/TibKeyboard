@@ -76,7 +76,7 @@ public class SoftKeyboard extends InputMethodService
     private String mWordSeparators;
     
     private Typeface mTypeface;
-    private String mTypefaceName = "monlambodyig.ttf";//Jomolhari-alpha3c-0605331.ttf";//"DDC_Uchen.ttf"
+    private String mTypefaceName = "DDC_Uchen.ttf";//Jomolhari-alpha3c-0605331.ttf";//"DDC_Uchen.ttf"
     /**
      * Main initialization of the input method component.  Be sure to call
      * to super class.
@@ -619,14 +619,37 @@ public class SoftKeyboard extends InputMethodService
                 primaryCode = Character.toUpperCase(primaryCode);
             }
         }
-        if (isAlphabet(primaryCode) && mPredictionOn) {
+        if ( (primaryCode != 32) && (primaryCode != 3851) && (primaryCode != 3853) && mPredictionOn) {
+        	Log.v("TibSoftKeyboard", "Handle Character: is Alphabet ");
             mComposing.append((char) primaryCode);
             getCurrentInputConnection().setComposingText(mComposing, 1);
             updateShiftKeyState(getCurrentInputEditorInfo());
             updateCandidates();
         } else {
-            getCurrentInputConnection().commitText(
-                    String.valueOf((char) primaryCode), 1);
+        	Log.v("TibSoftKeyboard", "Handle Character: is Alphabet ");
+        	
+        	if (primaryCode == 3851) {
+        		String precomposed = "";
+        		String comp = mComposing.toString() + (char)3851;
+        		
+        		precomposed =  TibConvert.convertUnicodeToPrecomposedTibetan(comp);
+        		
+        		String strPre = "";
+        		int j = 0;
+        		
+        		for (int i = 0; i < precomposed.length() - 1; i++) {
+        			j = precomposed.charAt(i);
+					strPre = strPre + "\\u" + Integer.toHexString(j | 0x10000).substring(1).toUpperCase();
+				}
+        		
+        		Log.v("TibSoftKeyboard", "Precomposed: " + strPre);
+        		
+        		getCurrentInputConnection().commitText(
+                    precomposed, 1);
+        	}
+        	
+        	
+            
         }
     }
 

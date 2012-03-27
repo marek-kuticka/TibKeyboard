@@ -58,6 +58,10 @@ public class BhoKeyboardView extends KeyboardView {
     		{
 	    		String keyCode = ((char)key.codes[0])+"";
 	    		
+	    		if (key.codes[0] >= 3953 && key.codes[0] <= 4027) {
+					keyCode = "\u25CC" + keyCode;
+				}
+	    		
 	    		key.icon = new DynaDrawable (getContext(), key, typeface, keyCode, Color.WHITE);
 	            key.iconPreview = new DynaDrawable (getContext(), key, typeface,  keyCode, Color.BLACK);
     		}

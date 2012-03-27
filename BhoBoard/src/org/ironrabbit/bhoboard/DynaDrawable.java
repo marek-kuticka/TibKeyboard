@@ -30,7 +30,7 @@ public class DynaDrawable extends Drawable {
 		
 		mPaint = new Paint();
         mPaint.setAntiAlias(true);
-        mPaint.setTextSize((int)(key.height/3));
+        mPaint.setTextSize((int)(key.height/2));
         mPaint.setColor(textColor);
         mPaint.setTypeface(mTypeface);
 	        
@@ -40,7 +40,7 @@ public class DynaDrawable extends Drawable {
 	public void draw(Canvas canvas) {
 
 		
-		canvas.drawText(mText, -5, 5, mPaint);
+		canvas.drawText(mText, -8, 10, mPaint);
 		
 		
 	}
