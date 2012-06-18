@@ -16,7 +16,12 @@
 
 package org.maja.tibetan.keyboard;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.maja.tibetan.keyboard.R;
 import android.graphics.Typeface;
+import android.inputmethodservice.ExtractEditText;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
@@ -28,12 +33,6 @@ import android.view.View;
 import android.view.inputmethod.CompletionInfo;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
-import android.view.inputmethod.InputMethodManager;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import org.maja.tibetan.keyboard.R;
 
 
 /**
@@ -135,6 +134,19 @@ public class SoftKeyboard extends InputMethodService
         mCandidateView.setService(this);
         return mCandidateView;
     }
+    
+    /* (non-Javadoc)
+   	 * @see android.inputmethodservice.InputMethodService#onCreateExtractTextView()
+   	 */
+   	@Override
+   	public View onCreateExtractTextView() {
+   		// TODO Auto-generated method stub
+   		View view = super.onCreateExtractTextView(); 
+   		ExtractEditText textEdit = (ExtractEditText)view.findViewById(android.R.id.inputExtractEditText);
+   		textEdit.setTypeface(mTypeface);
+   		textEdit.setTextSize(30);
+   		return view;
+   	}
 
     /**
      * This is the main point where we do our initialization of the input method

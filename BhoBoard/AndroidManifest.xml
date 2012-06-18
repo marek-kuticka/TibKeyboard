@@ -1,5 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" 
         package="org.maja.tibetan.keyboard">
+<uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+<supports-screens android:xlargeScreens="true" android:largeScreens="true"/>
     <application android:label="@string/ime_name" android:icon="@drawable/icon">
         <service android:name="org.maja.tibetan.keyboard.SoftKeyboard"  android:icon="@drawable/icon" android:permission="android.permission.BIND_INPUT_METHOD">
             <intent-filter>

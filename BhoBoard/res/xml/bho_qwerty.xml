@@ -2,11 +2,11 @@
 <Keyboard android:keyWidth="8.333338%p" android:keyHeight="@dimen/key_height" android:horizontalGap="0.0px" android:verticalGap="0.0px"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <Row>
-        <Key android:codes="3904" android:popupCharacters="ྐ" android:keyEdgeFlags="left" />
-        <Key android:codes="3905" android:popupCharacters="ྑ" />
-        <Key android:codes="3906" android:popupCharacters="ྒ" />
-        <Key android:codes="3908" android:popupCharacters="ྔ" />
-        <Key android:codes="3954" android:popupCharacters="ྀ" />
+        <Key android:codes="3904" android:popupCharacters="ྐabc" android:keyEdgeFlags="left" android:popupKeyboard="@xml/kbd_popup_template" />
+        <Key android:codes="3905" android:popupCharacters="ྑdef" android:popupKeyboard="@xml/kbd_popup_template"/>
+        <Key android:codes="3906" android:popupCharacters="ྒ" android:popupKeyboard="@xml/kbd_popup_template"/>
+        <Key android:codes="3908" android:popupCharacters="ྔ" android:popupKeyboard="@xml/kbd_popup_template"/>
+        <Key android:codes="3954" android:popupCharacters="ྀ" android:popupKeyboard="@xml/kbd_popup_template"/>
         <Key android:codes="3956" />
         <Key android:codes="3962" android:popupCharacters="ཻ" />
         <Key android:codes="3964" android:popupCharacters="ཽ" />

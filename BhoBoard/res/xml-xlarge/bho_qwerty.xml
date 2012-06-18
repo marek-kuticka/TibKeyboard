@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Keyboard android:keyWidth="8.333338%p" android:keyHeight="25 dip" android:horizontalGap="0.0px" android:verticalGap="0.0px"
+<Keyboard android:keyWidth="8.333338%p" android:keyHeight="@dimen/key_height" android:horizontalGap="0.0px" android:verticalGap="0.0px"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <Row>
         <Key android:codes="3904" android:popupCharacters="ྐ" android:keyEdgeFlags="left" />

@@ -20,6 +20,7 @@
 
 <resources>
     <dimen name="key_height">50dip</dimen>
+    <dimen name="popup_key_height">30dip</dimen>
     <dimen name="candidate_font_height">20sp</dimen>
     <dimen name="candidate_vertical_padding">6sp</dimen>
 </resources>
